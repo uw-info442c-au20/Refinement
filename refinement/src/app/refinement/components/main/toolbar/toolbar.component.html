@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    
+    <span class="some-space"></span>
+    <h1 class="">REFINEMENT</h1>
+    <span class="some-space"></span>
+
+    <div class="example-button-row">
+        <button mat-button *ngFor="let tab of tabs" (click)="onButtonClick(tab.route)">{{tab.label}}</button>
+    </div>
+</mat-toolbar>
