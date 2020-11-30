@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -23,16 +24,19 @@ export class ToolbarComponent implements OnInit {
     {
       label: 'ABOUT US',
       route: 'about-us'
-    }
+    },
   ];
 
-  constructor() { }
+  constructor(
+    public router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
 
   onButtonClick(tab: any): void {
     console.log(tab);
+    this.router.navigate([`/${tab}`]);
   }
 
 }

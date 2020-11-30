@@ -1,0 +1,25 @@
+.container {
+    min-width: 100%;
+    min-height: 700px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.season-container {
+    background-color: bisque;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 300px;
+}
+
+.category-container {
+    background-color: bisque;
+    margin: 5px;
+    min-width: 40%;
+    min-height: 40%;
+    max-height: 40%;
+}

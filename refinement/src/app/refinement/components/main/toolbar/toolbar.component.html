@@ -7,4 +7,7 @@
     <div class="example-button-row">
         <button mat-button *ngFor="let tab of tabs" (click)="onButtonClick(tab.route)">{{tab.label}}</button>
     </div>
+
+    <app-search-bar></app-search-bar>
+    
 </mat-toolbar>
