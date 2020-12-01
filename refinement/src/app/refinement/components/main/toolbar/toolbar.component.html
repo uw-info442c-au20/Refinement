@@ -5,7 +5,13 @@
     <span class="some-space"></span>
 
     <div class="example-button-row">
-        <button mat-button *ngFor="let tab of tabs" (click)="onButtonClick(tab.route)">{{tab.label}}</button>
+        <ng-container *ngFor="let tab of tabs">
+            <button mat-button *ngIf="tab.label !== 'BRAND'" (click)="onButtonClick(tab.route)">{{tab.label}}</button>
+            <button mat-button *ngIf="tab.label === 'BRAND'" [matMenuTriggerFor]="menu">{{tab.label}}</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item *ngFor="let brand of brands">{{brand.label}}</button>
+            </mat-menu>
+        </ng-container>
     </div>
 
     <app-search-bar></app-search-bar>

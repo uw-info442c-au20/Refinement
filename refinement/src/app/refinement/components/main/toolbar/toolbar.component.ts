@@ -27,6 +27,25 @@ export class ToolbarComponent implements OnInit {
     },
   ];
 
+  public brands = [
+    {
+      label: 'Abercrombie & Fitch',
+      route: 'abercrombie-and-fitch'
+    },
+    {
+      label: 'Hollister',
+      route: 'hollister'
+    },
+    {
+      label: 'H&M',
+      route: 'hm'
+    },
+    {
+      label: 'Forever 21',
+      route: 'forever-21'
+    },
+  ];
+
   constructor(
     public router: Router,
   ) { }
