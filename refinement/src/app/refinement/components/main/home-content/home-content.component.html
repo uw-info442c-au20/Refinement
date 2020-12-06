@@ -1,8 +1,23 @@
 
-<div class="season-container"></div>
+<div class="season-container">
+    <img class="banner-bg" src="../../../../../assets/home-banners/BannerPicture.jpg">
+</div>
 <div class="container">
-    <div class="category-container"></div>
-    <div class="category-container"></div>
-    <div class="category-container"></div>
-    <div class="category-container"></div>
+    <div class="category-container" (click)="onCategoryClicked('dress')" (mouseenter) ="onHover('dress')"  (mouseleave) ="unHover('dress')">
+        <!-- <span class="text-center" [ngClass]="{'hidden': showDressLabel === false}">DRESS</span> -->
+        <img class="category-bg" src="../../../../../assets/home-banners/Dress.jpg">
+        <div class="img-text" [ngClass]="{'hidden': showDressLabel === false}">DRESS</div>
+    </div>
+    <div class="category-container" (click)="onCategoryClicked('jacket')" (mouseenter) ="onHover('jacket')"  (mouseleave) ="unHover('jacket')">
+        <img class="category-bg" src="../../../../../assets/home-banners/Jacket.jpg">
+        <div class="img-text" [ngClass]="{'hidden': showJacketLabel === false}">JACKET</div>
+    </div> 
+    <div class="category-container" (click)="onCategoryClicked('shoes')" (mouseenter) ="onHover('shoes')"  (mouseleave) ="unHover('shoes')">
+        <img class="category-bg" src="../../../../../assets/home-banners/Shoes.jpg">
+        <div class="img-text" [ngClass]="{'hidden': showShoesLabel === false}">SHOES</div>
+    </div>
+    <div class="category-container" (click)="onCategoryClicked('fitness')"(mouseenter) ="onHover('fitness')"  (mouseleave) ="unHover('fitness')">
+        <img class="category-bg" src="../../../../../assets/home-banners/TrackSuit.jpg">
+        <div class="img-text" [ngClass]="{'hidden': showFitnessLabel === false}">FITNESS</div>
+    </div>
 </div>

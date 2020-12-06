@@ -114,4 +114,9 @@ export class ToolbarComponent implements OnInit {
     this.router.navigate([`/${tab}`]);
   }
 
+  onBrandSelected(brand: any): void {
+    console.log(brand);
+    this.router.navigate(['/brands', brand]);
+  }
+
 }

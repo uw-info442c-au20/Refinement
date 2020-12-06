@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +25,7 @@ import { MainComponent } from './refinement/components/main/main.component';
 import { SearchBarComponent } from './refinement/components/main/toolbar/search-bar/search-bar.component';
 import { HomeContentComponent } from './refinement/components/main/home-content/home-content.component';
 import { AboutUsComponent } from './refinement/components/main/about-us/about-us.component';
+import { BrandsComponent } from './refinement/components/main/brands/brands.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { AboutUsComponent } from './refinement/components/main/about-us/about-us
     MainComponent,
     SearchBarComponent,
     HomeContentComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    BrandsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    CommonModule,
     ReactiveFormsModule,
     RouterModule.forRoot(APP_ROUTES),
     BrowserAnimationsModule,
