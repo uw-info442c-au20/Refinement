@@ -30,15 +30,15 @@ export class ToolbarComponent implements OnInit {
   public brands = [
     {
       label: '& Other Stories',
-      route: 'and-other-stories'
+      route: 'and_other_stories'
     },
     {
       label: 'Abercrombie & Fitch',
-      route: 'abercrombie-and-fitch'
+      route: 'abercrombie_and_fitch'
     },
     {
       label: 'American Eagle',
-      route: 'american-eagle'
+      route: 'american_eagle'
     },
     {
       label: 'Celine',
@@ -50,15 +50,15 @@ export class ToolbarComponent implements OnInit {
     },
     {
       label: 'Forever 21',
-      route: 'forever-21'
+      route: 'forever_21'
     },
     {
       label: 'Free People',
-      route: 'free-people'
+      route: 'free_people'
     },
     {
       label: 'Girlfriend Collective',
-      route: 'girlfriend-collective'
+      route: 'girlfriend_collective'
     },
     {
       label: 'H&M',
@@ -82,7 +82,7 @@ export class ToolbarComponent implements OnInit {
     },
     {
       label: 'Mara Hoffman',
-      route: 'mara-hoffman'
+      route: 'mara_hoffman'
     },
     {
       label: 'Nordstrom',
@@ -94,7 +94,7 @@ export class ToolbarComponent implements OnInit {
     },
     {
       label: 'Topshop',
-      route: 'topshop'
+      route: 'top_shop'
     },
     {
       label: 'Uniqlo',
