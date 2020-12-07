@@ -1,0 +1,2 @@
+Browser Testing Protocol:
+Our app is only compatible with Chrome.  We are coding and developing with Chrome's inspection tool.  In addition to this we will ensure that it supports both mouse-driven and touch-driven modes of user interaction, runs in both Chrome desktop and mobile browsers, and is accessible to visually-impaired users who are using a screen reader.
