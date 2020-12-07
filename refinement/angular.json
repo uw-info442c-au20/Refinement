@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "refinement"
+  "defaultProject": "refinement",
+  "cli": {
+    "analytics": "e284dec4-719f-45b9-9051-d60c8e4fe043"
+  }
 }
