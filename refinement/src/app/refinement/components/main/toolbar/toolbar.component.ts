@@ -13,10 +13,10 @@ export class ToolbarComponent implements OnInit {
       label: 'HOME',
       route: 'home'
     },
-    {
-      label: 'PRODUCT',
-      route: 'product'
-    },
+    // {
+    //   label: 'PRODUCT',
+    //   route: 'product'
+    // },
     {
       label: 'BRAND',
       route: 'brand'

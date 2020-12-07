@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-content',
@@ -12,16 +13,38 @@ export class HomeContentComponent implements OnInit {
   public showShoesLabel = false;
   public showFitnessLabel = false;
 
-  constructor() { }
+  constructor(
+    public router: Router
+  ) { 
+    
+  }
 
   ngOnInit(): void {
     
   }
 
   onCategoryClicked(category: any): void {
-    // navigate to new page of selected category
+    let brand = '';
+    switch (category) {
+      case 'dress':
+        brand = 'forever_21';
+        break;
+      case 'jacket': 
+        brand = 'hollister';
+        break;
+      case 'shoes': 
+        brand = 'american_eagle';
+        break;
+      case 'fitness': 
+        brand = 'uniqlo';
+        break;
+      default: 
+        break;
+    }
+    this.router.navigate(['/brands', brand]);
 
   }
+
 
   onHover(type: any): void {
     switch (type) {
